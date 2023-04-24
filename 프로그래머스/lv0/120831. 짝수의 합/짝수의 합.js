@@ -1,13 +1,11 @@
 function solution(n) {
-    var answer = n%2 === 0 ? n : n-1;
-    var count = n%2 === 0 ? n : n-1;
-    
-    while ( count > 0 ) {
-        count = count - 2;
-        answer = answer + count;
-        
+    let answer = 0;
+
+    for (let i=1; i<=n; i ++) {
+        if ( i%2 === 0 ) {
+            answer = answer + i
+        }
     }
-    
     
     return answer;
 }
