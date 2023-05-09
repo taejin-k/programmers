@@ -1,7 +1,7 @@
 function solution(my_string) {
     var answer = 0;
+    let arr = my_string.split('').filter(item => !isNaN(item));
     
-    answer = [...my_string].map(item => isNaN(item) ? 0 : Number(item)).reduce((acc, cur) => { return ( acc + cur) }, 0);;
-    
+    answer = arr.reduce((acc, cur) => acc + Number(cur), 0);
     return answer;
 }
