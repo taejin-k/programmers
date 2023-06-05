@@ -1,10 +1,11 @@
 function solution(num, k) {
-    var answer = -1;
-    let count = [...String(num)].filter(item => Number(item) === k).length;
+    let answer = 0;
+    let flag = [...String(num)].includes(String(k));
     
-    if ( count ) answer = [...String(num)].indexOf(String(k)) + 1;
-    else answer = -1
-    
-    return answer 
-    
+    if ( flag ) {
+        answer = [...String(num)].indexOf(String(k)) + 1;
+    } else {
+        answer = -1;
+    }
+    return answer;
 }
