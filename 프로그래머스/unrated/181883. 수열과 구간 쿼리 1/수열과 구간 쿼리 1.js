@@ -1,16 +1,15 @@
 function solution(arr, queries) {
-    var answer = [...arr];
+    var answer = [];
     
     for (let i=0; i<queries.length; i++) {
-        let a = Array.from(
-            {length: queries[i][1] + 1}, (val, idx) => idx).filter(item => {
-            return item >= queries[i][0]     
-        })
-        
-        for (let j=0; j<a.length; j++) {
-            answer[a[j]] = answer[a[j]] + 1
+        for (let j=0; j<arr.length; j++) {
+            if ( queries[i][0] <= j && queries[i][1] >= j) {
+                arr[j] = arr[j] + 1;
+            }
         }
     }
+    
+    answer = arr;
     
     return answer;
 }
