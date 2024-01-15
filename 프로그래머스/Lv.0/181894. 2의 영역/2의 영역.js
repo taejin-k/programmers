@@ -11,10 +11,7 @@ function solution(arr) {
     if (indexArr[0] === undefined) {
         return [-1]
     }
-    
-    if (indexArr[0] === indexArr.at(-1)) {
-        return [arr[indexArr[0]]]
-    }
+
     
     answer = arr.slice(indexArr[0], indexArr.at(-1) + 1);
     

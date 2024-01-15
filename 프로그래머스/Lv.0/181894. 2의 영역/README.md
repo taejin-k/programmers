@@ -1,10 +1,10 @@
 # [level Lv.0] 2의 영역 - 181894 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181894?language=javascript) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181894?language=javascript#) 
 
 ### 성능 요약
 
-메모리: 41.5 MB, 시간: 4.41 ms
+메모리: 41.6 MB, 시간: 5.57 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 1월 1일 21:53:26
+2024년 1월 1일 21:55:50
 
 ### 문제 설명
 
