@@ -8,7 +8,7 @@ function solution(q, r, code) {
         } 
     }
     
-    answer = arr.join().replaceAll(',', '')
+    answer = arr.join('')
     
     return answer;
 }
