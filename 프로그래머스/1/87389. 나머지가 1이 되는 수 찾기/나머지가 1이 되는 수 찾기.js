@@ -1,10 +1,13 @@
 function solution(n) {
-    var answer = n;
+    var answer = 0;
+    let x = 0;
     
-    for (let i=2; i<n; i++) {
-        if (n%i === 1 && i<answer) {
-            answer = i;
-        }    
+    while(!answer) {
+        if (n%x === 1) {
+            answer = x    
+        }
+        
+        x++
     }
     
     return answer;
