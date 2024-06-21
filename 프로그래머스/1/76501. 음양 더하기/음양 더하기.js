@@ -1,6 +1,10 @@
 function solution(absolutes, signs) {
-    var answer = 123456789;
+    let answer = 0;
     
-    answer = absolutes.reduce((a, b, index) => a + (signs[index] ? (+b) : (-b)),0)
+    for (let i=0; i<absolutes.length; i++) {
+        answer+= (absolutes[i]*(signs[i] ? 1 : -1))    
+    }
+    
+    
     return answer;
 }
