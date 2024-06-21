@@ -1,8 +1,8 @@
 function solution(seoul) {
     var answer = '';
     
-    let index = seoul.indexOf('Kim');
+    let position = seoul.indexOf('Kim');
     
-    answer = `김서방은 ${index}에 있다`
+    answer = `김서방은 ${position}에 있다`
     return answer;
 }
