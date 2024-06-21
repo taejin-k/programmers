@@ -2,6 +2,6 @@ function solution(arr) {
     var answer = [];
     
     answer = arr.filter(item => item !== Math.min(...arr));
-    if (!answer.length) return [-1]
+    if (answer.length === 0) [-1]
     return answer;
 }
