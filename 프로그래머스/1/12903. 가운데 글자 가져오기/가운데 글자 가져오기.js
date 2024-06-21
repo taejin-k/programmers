@@ -1,12 +1,11 @@
 function solution(s) {
     var answer = '';
+    let start = 0;
+    let end = Math.floor(s.length/2) + 1;
     
-    if (s.length%2 === 0) {
-        answer = s.slice((s.length/2)-1, (s.length/2) +1)
-       
-    } else {
-         answer = s[Math.floor(s.length/2)]    
-    }
-    
+    if (s.length%2 !== 0) start = Math.floor(s.length/2)
+    else start = Math.floor(s.length/2) - 1
+        
+    answer = s.slice(start, end)
     return answer;
 }
